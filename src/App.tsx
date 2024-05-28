@@ -12,13 +12,9 @@ function App() {
         </GridItem>
         <Show above="lg">
           {" "}
-          <GridItem area={"aside"} bg="yellow">
-            aside
-          </GridItem>
+          <GridItem area={"aside"}>aside</GridItem>
         </Show>
-        <GridItem area={"main"} bg="brown ">
-          main
-        </GridItem>
+        <GridItem area={"main"}>main</GridItem>
       </Grid>
     </div>
   );
