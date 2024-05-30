@@ -9,9 +9,8 @@ interface Props {
 }
 
 function GenresList({ selectedGenre, onSelectedGenre }: Props) {
-  const { data, isLoading, error } = useGenres();
+  const { data, isLoading } = useGenres();
   const skeletons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-  if (error) return null;
   return (
     <>
       <List>
@@ -34,6 +33,7 @@ function GenresList({ selectedGenre, onSelectedGenre }: Props) {
                 variant="link"
                 fontSize="lg"
                 fontWeight={selectedGenre?.id === genre.id ? "bold" : "normal"}
+                overflow="hidden"
               >
                 {genre.name}
               </Button>
