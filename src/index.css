@@ -1,0 +1,21 @@
+/* Total scroll bar */
+::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100; /* color of the track */
+  border-radius: 10px; /* rounded corners on the track */
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: #2c2c2ca3; /* color of the handle */
+  border-radius: 10px; /* rounded corners on the handle */
+}
+
+/* Scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555555c6; /* color of the handle when hovered */
+}
